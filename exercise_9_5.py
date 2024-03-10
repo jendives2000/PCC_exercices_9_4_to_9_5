@@ -27,10 +27,10 @@ class User:
         login_attempts=0,  # 1a.
     ):
         """Initialize all parameters."""
-        self.first_name = first_name
-        self.last_name = last_name
+        self.first_name = first_name.title()
+        self.last_name = last_name.title()
         self.age = age
-        self.country = country
+        self.country = country.title()
         self.login_attempts = login_attempts
 
     def describe_user(self):

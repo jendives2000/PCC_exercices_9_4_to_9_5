@@ -23,8 +23,8 @@ class Restaurant:  # 1a.
 
     def __init__(self, name: str, cuisine_type: str, number_served=0):  # 1a.1.
         """Initialize name and cuisine type."""
-        self.name = name
-        self.cuisine_type = cuisine_type
+        self.name = name.title()
+        self.cuisine_type = cuisine_type.title()
         self.number_served = number_served
 
     def describe_restaurants(self):
